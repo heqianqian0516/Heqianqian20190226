@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="@color/colorAccent"
+          app:navigationIcon="@drawable/back"
+
+          >
+      </android.support.v7.widget.Toolbar>
+
+      <ImageView
+          android:id="@+id/back"
+          android:src="@drawable/back"
+          android:layout_width="wrap_content"
+          android:layout_height="50dp" />
+
+      <ImageView
+          android:id="@+id/image_pop"
+          android:layout_width="50dp"
+          android:layout_alignParentRight="true"
+          android:src="@drawable/ic_action_right"
+          android:layout_height="50dp" />
+
+  </RelativeLayout>
+   <com.jcodecraeer.xrecyclerview.XRecyclerView
+       android:id="@+id/recy"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+</LinearLayout>
